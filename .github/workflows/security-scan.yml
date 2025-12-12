@@ -181,7 +181,7 @@ jobs:
           echo "Pipeline status: Success" >> scan_summary.txt
 
       - name: Upload Summary
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: security-scan-summary
           path: scan_summary.txt
